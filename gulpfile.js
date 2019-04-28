@@ -36,7 +36,7 @@ function styles(){
 		level: 2
 	}))
 	// Выходная папка для стилей
-	.pipe(gulp.dest('./css/min.css'))
+	.pipe(gulp.dest('./src/css/min.css'))
 	.pipe(browserSync.stream())
 }
 
@@ -62,7 +62,7 @@ function scripts(){
 function watch(){
 	browserSync.init({
 		server: {
-			baseDir: "./"
+			baseDir: "./src"
 		}
 	});
 
