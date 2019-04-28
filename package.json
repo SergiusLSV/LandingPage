@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/SergiusLSV/LandingPage#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.5",
     "gulp": "^4.0.1",
-    "gulp-autoprefixer": "^6.1.0"
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {}
 }
