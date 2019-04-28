@@ -1,0 +1,22 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiusLSV/LandingPage.git"
+  },
+  "author": "Sergius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergiusLSV/LandingPage/issues"
+  },
+  "homepage": "https://github.com/SergiusLSV/LandingPage#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1"
+  }
+}
