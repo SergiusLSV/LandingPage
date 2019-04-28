@@ -36,7 +36,7 @@ function styles(){
 		level: 2
 	}))
 	// Выходная папка для стилей
-	.pipe(gulp.dest('./src/css/min.css'))
+	.pipe(gulp.dest('./src/css/'))
 	.pipe(browserSync.stream())
 }
 
@@ -52,7 +52,7 @@ function scripts(){
 		toplevel: true
 	}))
 	// Выходная папка для стилей
-	.pipe(gulp.dest('./js/min.js'))
+	.pipe(gulp.dest('./src/js/'))
 	.pipe(browserSync.stream())
 }
 
