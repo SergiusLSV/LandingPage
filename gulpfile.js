@@ -1,4 +1,4 @@
-// Подключение модулей GULP
+// Подключение модулей Gulp
 var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		cleanCSS = require('gulp-clean-css'),
@@ -10,3 +10,6 @@ var gulp = require('gulp'),
 		notify = require("gulp-notify"),
 		sourcemaps = require('gulp-sourcemaps');
 
+
+
+// Задачи для Gulp
