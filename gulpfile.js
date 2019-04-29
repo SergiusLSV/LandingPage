@@ -3,7 +3,10 @@ var gulp = require('gulp'),
 		autoprefixer = require('gulp-autoprefixer'),
 		cleanCSS = require('gulp-clean-css'),
 		uglify = require('gulp-uglify'),
-		browserSync = require('browser-sync').create();
+		browserSync = require('browser-sync').create(),
+		watch = require('gulp-watch').create(),
+		sass = require('gulp-sass').create(),
+		sourcemaps = require('gulp-sourcemaps').create();
 
 
 
@@ -88,3 +91,14 @@ gulp.task('watch', watch);
 gulp.task('build', gulp.series(gulp.parallel(styles,scripts)));
 // Таск для последовательного запуска build и watch 
 gulp.task('dev', gulp.series('build','watch'));
+
+
+
+// Таск для компиляции scss в css 
+gulp.task('sass-compile', function(){
+	return gulp.src('./src/scss/**/*.scss')
+	.pipe(sourcemaps.init())
+	.pipe(sass().on('error', sass.logError))
+	.pipe(sourcemaps.write('./'))
+	.pipe(gulp.dest('./src/css/'))
+})
